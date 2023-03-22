@@ -1,0 +1,68 @@
+.row {
+  color: #fff;
+  margin-left: 20px;
+}
+
+.row__posters {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 20px;
+}
+
+.row__poster {
+  max-height: 100px;
+  object-fit: contain;
+  margin-right: 10px;
+  transition: transform 450ms;
+}
+
+.row__poster:hover {
+  transform: scale(1.08);
+  opacity: 1;
+}
+
+.row__posterLarge {
+  max-height: 250px;
+  opacity: 1;
+}
+
+/* .row__posters::-webkit-scrollbar {
+  display: none;
+} */
+/* Style the scrollbar track */
+.row__posters::-webkit-scrollbar-track {
+  background-color: #3f3f3f;
+  border-radius: 10px;
+}
+
+/* Style the scrollbar thumb */
+.row__posters::-webkit-scrollbar-thumb {
+  background-color: #000000;
+  width: 2px;
+  height: 2px;
+  /* border-radius: 10px; */
+}
+
+/* Style the scrollbar corner */
+/* .row__posters::-webkit-scrollbar-corner {
+  background-color: #f5f5f5;
+} */
+
+/* Hide the scrollbar when not hovering */
+.row__posters::-webkit-scrollbar {
+  width: 2px;
+  height: 3px;
+  background-color: #f5f5f5;
+}
+
+.row__posters::-webkit-scrollbar-thumb:hover {
+  height: 4px;
+  background-color: #2b2020;
+}
+
+@media (max-width: 768px) {
+  .row__posters::-webkit-scrollbar {
+    display: none;
+  }
+}

@@ -1,0 +1,144 @@
+.loginScreen {
+  position: relative;
+  height: 130vh;
+  background: url("https://assets.nflxext.com/ffe/siteui/vlv3/757ab38f-5d08-40bc-b3eb-eaba63ed8203/93c34f94-56c8-40a7-8b2e-b4aac6427977/GB-en-20210125-popsignuptwoweeks-perspective_alpha_website_medium.jpg")
+    center no-repeat;
+  background-size: cover;
+}
+
+.loginScreen__logo {
+  position: fixed;
+  left: 150px;
+  width: 150px;
+  padding-left: 20px;
+  padding-top: 20px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.loginScreen__button {
+  position: fixed;
+  right: 150px;
+  top: 20px;
+  /*margin: 20px 20px;*/
+  background-color: #e50914;
+  border: none;
+  border-radius: 10%;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.loginScreen__header {
+  padding: auto 20px;
+}
+
+.loginScreen__gradient {
+  width: 100%;
+  z-index: 1;
+  height: 130vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0) 100%);
+}
+
+.loginScreen__body > h1 {
+  font-size: 3.125rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.loginScreen__body > h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.loginScreen__body > h3 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.loginScreen__body {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  right: 0;
+  color: #fff;
+  z-index: 1;
+  padding: 20px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.loginScreen__input > form > input {
+  padding: 10px;
+  outline-width: 0;
+  height: 30px;
+  width: 30%;
+  border: none;
+  max-width: 600px;
+}
+
+.loginScreen__input {
+  margin: 20px;
+}
+
+.loginScreen__getStarted {
+  padding: 16px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #e50914;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  /* styles for screens smaller than 768px */
+  .loginScreen {
+    height: 160vh;
+  }
+  .loginScreen__gradient {
+    height: 160vh;
+  }
+  .loginScreen__logo {
+    left: 10px;
+  }
+  .loginScreen__button {
+    right: 10px;
+  }
+}
+
+@media (max-width: 300px) {
+  /* styles for screens smaller than 480px */
+  .loginScreen__logo {
+    left: 5px;
+    width: 80px;
+  }
+  .loginScreen__button {
+    right: 5px;
+    font-size: 0.5rem;
+    font-weight: 300;
+  }
+  .loginScreen__body > h1 {
+    font-size: 20px;
+  }
+  .loginScreen__body > h2 {
+    font-size: 13px;
+  }
+  .loginScreen__body > h3 {
+    font-size: 10px;
+  }
+  .loginScreen__getStarted {
+    padding: 12px 20px;
+    font-size: 0.4rem;
+    font-weight: 300;
+  }
+  .loginScreen__input > form > input {
+    padding: 5px;
+    height: 15px;
+    width: 56%;
+  }
+}
